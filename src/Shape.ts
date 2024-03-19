@@ -97,6 +97,7 @@ export class RectShape implements IShape {
   };
 
   public onDrag = (positionX: number, positionY: number) => {
+    console.log("this is ondrag test edit")
     this.annotationData.mark.x = positionX - this.dragStartOffset.offsetX;
     this.annotationData.mark.y = positionY - this.dragStartOffset.offsetY;
     this.onChangeCallBack();
